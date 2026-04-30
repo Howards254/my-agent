@@ -1,0 +1,5 @@
+history/
+workspace/sessions/
+workspace/memory/history.jsonl
+workspace/memory/.cursor
+workspace/memory/.dream_cursor
