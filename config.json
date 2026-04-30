@@ -25,7 +25,7 @@
       "provider": "groq",
       "model": "llama-3.3-70b-versatile",
       "maxToolIterations": 15,
-      "maxMessages": 20,
+      "maxMessages": 10,
       "contextWindowTokens": 6000,
       "maxToolResultChars": 2000,
       "disabledSkills": [

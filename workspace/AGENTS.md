@@ -1,8 +1,10 @@
 # Agent Instructions
 
 ## Task Execution
-- Use tools immediately when they can answer or complete the task.
+- ALWAYS use tools first. Never ask the user for information that tools can provide.
+- When given a directory or file path, read it immediately with list_dir and read_file.
 - Chain tool calls to complete multi-step tasks in one go.
+- Do NOT ask clarifying questions if the answer can be found by reading files.
 - Write results, summaries, or outputs to files in the workspace so they persist.
 - After completing a task, summarize what was done in 2-3 lines.
 
