@@ -1,0 +1,42 @@
+{
+  "providers": {
+    "groq": {
+      "apiKey": "${GROQ_API_KEY}"
+    }
+  },
+  "tools": {
+    "web": {
+      "enable": false
+    },
+    "exec": {
+      "enable": true,
+      "timeout": 30,
+      "sandbox": ""
+    },
+    "my": {
+      "enable": false
+    },
+    "minimalPrompt": true,
+    "textAgentic": false,
+    "restrictToWorkspace": false
+  },
+  "agents": {
+    "defaults": {
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "maxToolIterations": 15,
+      "maxMessages": 20,
+      "contextWindowTokens": 6000,
+      "maxToolResultChars": 2000,
+      "disabledSkills": [
+        "clawhub",
+        "cron",
+        "github",
+        "skill-creator",
+        "summarize",
+        "tmux",
+        "weather"
+      ]
+    }
+  }
+}
